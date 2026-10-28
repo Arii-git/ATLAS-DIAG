@@ -1,0 +1,40 @@
+{
+  "ic": "74HCT02",
+  "timestamp": "2026-09-30T22:24:57",
+  "source": "dashboard",
+  "mode": "identify",
+  "verdict": "NO MATCH",
+  "detail": "74HCT02 19.9%, 74HCT86 11.7%, 74HCT08 10.5%, 74HCT32 1.2%, 74HCT00 0.8%, 74HCT04 0.0%",
+  "identify": [
+    {
+      "IC": "74HCT02",
+      "match %": 19.9,
+      "matching vectors": "51/256"
+    },
+    {
+      "IC": "74HCT86",
+      "match %": 11.7,
+      "matching vectors": "30/256"
+    },
+    {
+      "IC": "74HCT08",
+      "match %": 10.5,
+      "matching vectors": "27/256"
+    },
+    {
+      "IC": "74HCT32",
+      "match %": 1.2,
+      "matching vectors": "3/256"
+    },
+    {
+      "IC": "74HCT00",
+      "match %": 0.8,
+      "matching vectors": "2/256"
+    },
+    {
+      "IC": "74HCT04",
+      "match %": 0.0,
+      "matching vectors": "0/64"
+    }
+  ]
+}

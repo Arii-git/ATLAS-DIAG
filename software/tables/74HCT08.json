@@ -1,0 +1,96 @@
+{
+  "fault_dictionary": {
+    "011100000000": [
+      "Pin1_SA0",
+      "Pin2_SA0",
+      "Pin3_SA0"
+    ],
+    "101100000000": [
+      "Pin4_SA0",
+      "Pin5_SA0",
+      "Pin6_SA0"
+    ],
+    "110100000000": [
+      "Pin8_SA0",
+      "Pin9_SA0",
+      "Pin10_SA0"
+    ],
+    "111000000000": [
+      "Pin11_SA0",
+      "Pin12_SA0",
+      "Pin13_SA0"
+    ],
+    "111100000000": [
+      "Good"
+    ],
+    "111100000001": [
+      "Pin13_SA1"
+    ],
+    "111100000010": [
+      "Pin10_SA1"
+    ],
+    "111100000100": [
+      "Pin5_SA1"
+    ],
+    "111100001000": [
+      "Pin2_SA1"
+    ],
+    "111100010000": [
+      "Pin12_SA1"
+    ],
+    "111100010001": [
+      "Pin11_SA1"
+    ],
+    "111100100000": [
+      "Pin9_SA1"
+    ],
+    "111100100010": [
+      "Pin8_SA1"
+    ],
+    "111101000000": [
+      "Pin4_SA1"
+    ],
+    "111101000100": [
+      "Pin6_SA1"
+    ],
+    "111110000000": [
+      "Pin1_SA1"
+    ],
+    "111110001000": [
+      "Pin3_SA1"
+    ]
+  },
+  "gate_map": {
+    "Good": "PASS",
+    "Pin10_SA0": "G3 IN2 stuck-LO",
+    "Pin10_SA1": "G3 IN2 stuck-HI",
+    "Pin11_SA0": "G4 OUT stuck-LO",
+    "Pin11_SA1": "G4 OUT stuck-HI",
+    "Pin12_SA0": "G4 IN1 stuck-LO",
+    "Pin12_SA1": "G4 IN1 stuck-HI",
+    "Pin13_SA0": "G4 IN2 stuck-LO",
+    "Pin13_SA1": "G4 IN2 stuck-HI",
+    "Pin1_SA0": "G1 IN1 stuck-LO",
+    "Pin1_SA1": "G1 IN1 stuck-HI",
+    "Pin2_SA0": "G1 IN2 stuck-LO",
+    "Pin2_SA1": "G1 IN2 stuck-HI",
+    "Pin3_SA0": "G1 OUT stuck-LO",
+    "Pin3_SA1": "G1 OUT stuck-HI",
+    "Pin4_SA0": "G2 IN1 stuck-LO",
+    "Pin4_SA1": "G2 IN1 stuck-HI",
+    "Pin5_SA0": "G2 IN2 stuck-LO",
+    "Pin5_SA1": "G2 IN2 stuck-HI",
+    "Pin6_SA0": "G2 OUT stuck-LO",
+    "Pin6_SA1": "G2 OUT stuck-HI",
+    "Pin8_SA0": "G3 OUT stuck-LO",
+    "Pin8_SA1": "G3 OUT stuck-HI",
+    "Pin9_SA0": "G3 IN1 stuck-LO",
+    "Pin9_SA1": "G3 IN1 stuck-HI"
+  },
+  "pin_config": "IIOIIOXOIIOIIX",
+  "vectors": [
+    "11111111",
+    "01010101",
+    "10101010"
+  ]
+}

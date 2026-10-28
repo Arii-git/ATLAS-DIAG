@@ -1,0 +1,32 @@
+{
+  "ic": "74HCT04",
+  "timestamp": "2026-09-30T21:57:45",
+  "source": "dashboard",
+  "mode": "quick",
+  "verdict": "FAULT",
+  "detail": "Bad 1/2",
+  "signature": "010010000000",
+  "candidates": [],
+  "repeat_diffs": 0,
+  "seconds": 0.013,
+  "full": {
+    "total": 2,
+    "mismatches": 1
+  },
+  "per_vector": [
+    {
+      "vector": "000000",
+      "expected": "111111",
+      "got": "010010",
+      "match": false,
+      "ones": 0
+    },
+    {
+      "vector": "111111",
+      "expected": "000000",
+      "got": "000000",
+      "match": true,
+      "ones": 6
+    }
+  ]
+}

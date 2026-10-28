@@ -1,0 +1,7 @@
+IC,function,exhaustive vectors,compacted vectors,result,mismatches,detail,test time (s),tested at
+74HCT00,Quad 2-input NAND,256,3,PASS,0/256,256/256 OK,1.5,21:18:34
+74HCT02,Quad 2-input NOR,256,3,FAULT,175/256,Bad 175/256,1.53,21:18:38
+74HCT04,Hex inverter,64,2,FAULT,63/64,Bad 63/64,0.59,21:18:41
+74HCT08,Quad 2-input AND,256,3,FAULT,256/256,Wrong chip - behaves like 74HCT00,1.47,21:18:44
+74HCT32,Quad 2-input OR,256,3,FAULT,240/256,Wrong chip - behaves like 74HCT00,1.38,21:19:18
+74HCT86,Quad 2-input XOR,256,3,FAULT,175/256,Wrong chip - behaves like 74HCT00,1.39,21:19:21

@@ -1,0 +1,62 @@
+{
+  "74HCT00": {
+    "aliased_fault_groups": 4,
+    "compacted_vectors": 3,
+    "exhaustive_vectors": 256,
+    "headers": [
+      "firmware/Core/Inc/ic_table_74HCT00.h"
+    ],
+    "index": 0,
+    "json": "software/tables/74HCT00.json"
+  },
+  "74HCT02": {
+    "aliased_fault_groups": 4,
+    "compacted_vectors": 3,
+    "exhaustive_vectors": 256,
+    "headers": [
+      "firmware/Core/Inc/ic_table_74HCT02.h"
+    ],
+    "index": 1,
+    "json": "software/tables/74HCT02.json"
+  },
+  "74HCT04": {
+    "aliased_fault_groups": 12,
+    "compacted_vectors": 2,
+    "exhaustive_vectors": 64,
+    "headers": [
+      "firmware/Core/Inc/ic_table_74HCT04.h"
+    ],
+    "index": 2,
+    "json": "software/tables/74HCT04.json"
+  },
+  "74HCT08": {
+    "aliased_fault_groups": 4,
+    "compacted_vectors": 3,
+    "exhaustive_vectors": 256,
+    "headers": [
+      "firmware/Core/Inc/ic_table_74HCT08.h"
+    ],
+    "index": 3,
+    "json": "software/tables/74HCT08.json"
+  },
+  "74HCT32": {
+    "aliased_fault_groups": 4,
+    "compacted_vectors": 3,
+    "exhaustive_vectors": 256,
+    "headers": [
+      "firmware/Core/Inc/ic_table_74HCT32.h"
+    ],
+    "index": 4,
+    "json": "software/tables/74HCT32.json"
+  },
+  "74HCT86": {
+    "aliased_fault_groups": 0,
+    "compacted_vectors": 3,
+    "exhaustive_vectors": 256,
+    "headers": [
+      "firmware/Core/Inc/ic_table_74HCT86.h"
+    ],
+    "index": 5,
+    "json": "software/tables/74HCT86.json"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "fault_dictionary": {
+    "011111000000": [
+      "Pin1_SA1",
+      "Pin2_SA0"
+    ],
+    "101111000000": [
+      "Pin3_SA1",
+      "Pin4_SA0"
+    ],
+    "110111000000": [
+      "Pin5_SA1",
+      "Pin6_SA0"
+    ],
+    "111011000000": [
+      "Pin8_SA0",
+      "Pin9_SA1"
+    ],
+    "111101000000": [
+      "Pin10_SA0",
+      "Pin11_SA1"
+    ],
+    "111110000000": [
+      "Pin12_SA0",
+      "Pin13_SA1"
+    ],
+    "111111000000": [
+      "Good"
+    ],
+    "111111000001": [
+      "Pin12_SA1",
+      "Pin13_SA0"
+    ],
+    "111111000010": [
+      "Pin10_SA1",
+      "Pin11_SA0"
+    ],
+    "111111000100": [
+      "Pin8_SA1",
+      "Pin9_SA0"
+    ],
+    "111111001000": [
+      "Pin5_SA0",
+      "Pin6_SA1"
+    ],
+    "111111010000": [
+      "Pin3_SA0",
+      "Pin4_SA1"
+    ],
+    "111111100000": [
+      "Pin1_SA0",
+      "Pin2_SA1"
+    ]
+  },
+  "gate_map": {
+    "Good": "PASS",
+    "Pin10_SA0": "G5 OUT stuck-LO",
+    "Pin10_SA1": "G5 OUT stuck-HI",
+    "Pin11_SA0": "G5 IN1 stuck-LO",
+    "Pin11_SA1": "G5 IN1 stuck-HI",
+    "Pin12_SA0": "G6 OUT stuck-LO",
+    "Pin12_SA1": "G6 OUT stuck-HI",
+    "Pin13_SA0": "G6 IN1 stuck-LO",
+    "Pin13_SA1": "G6 IN1 stuck-HI",
+    "Pin1_SA0": "G1 IN1 stuck-LO",
+    "Pin1_SA1": "G1 IN1 stuck-HI",
+    "Pin2_SA0": "G1 OUT stuck-LO",
+    "Pin2_SA1": "G1 OUT stuck-HI",
+    "Pin3_SA0": "G2 IN1 stuck-LO",
+    "Pin3_SA1": "G2 IN1 stuck-HI",
+    "Pin4_SA0": "G2 OUT stuck-LO",
+    "Pin4_SA1": "G2 OUT stuck-HI",
+    "Pin5_SA0": "G3 IN1 stuck-LO",
+    "Pin5_SA1": "G3 IN1 stuck-HI",
+    "Pin6_SA0": "G3 OUT stuck-LO",
+    "Pin6_SA1": "G3 OUT stuck-HI",
+    "Pin8_SA0": "G4 OUT stuck-LO",
+    "Pin8_SA1": "G4 OUT stuck-HI",
+    "Pin9_SA0": "G4 IN1 stuck-LO",
+    "Pin9_SA1": "G4 IN1 stuck-HI"
+  },
+  "pin_config": "IOIOIOXOIOIOIX",
+  "vectors": [
+    "000000",
+    "111111"
+  ]
+}

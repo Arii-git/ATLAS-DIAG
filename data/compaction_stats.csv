@@ -1,0 +1,7 @@
+IC,function,exhaustive,compacted,reduction %,aliased groups
+74HCT00,Quad 2-input NAND,256,3,98.8,4
+74HCT02,Quad 2-input NOR,256,3,98.8,4
+74HCT04,Hex inverter,64,2,96.9,12
+74HCT08,Quad 2-input AND,256,3,98.8,4
+74HCT32,Quad 2-input OR,256,3,98.8,4
+74HCT86,Quad 2-input XOR,256,3,98.8,0

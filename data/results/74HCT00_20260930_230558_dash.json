@@ -1,0 +1,41 @@
+{
+  "ic": "74HCT00",
+  "timestamp": "2026-09-30T23:05:58",
+  "source": "dashboard",
+  "mode": "quick",
+  "verdict": "FAULT",
+  "detail": "G1 IN2 stuck-HI",
+  "signature": "000011110111",
+  "candidates": [
+    "Pin2_SA1"
+  ],
+  "repeat_diffs": 0,
+  "seconds": 0.009,
+  "full": {
+    "total": 3,
+    "mismatches": 1
+  },
+  "per_vector": [
+    {
+      "vector": "11111111",
+      "expected": "0000",
+      "got": "0000",
+      "match": true,
+      "ones": 8
+    },
+    {
+      "vector": "01010101",
+      "expected": "1111",
+      "got": "1111",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "10101010",
+      "expected": "1111",
+      "got": "0111",
+      "match": false,
+      "ones": 4
+    }
+  ]
+}

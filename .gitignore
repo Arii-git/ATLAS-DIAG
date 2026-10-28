@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Streamlit local secrets
+.streamlit/secrets.toml
+
+# STM32CubeIDE build output and local state
+firmware/Debug/
+firmware/Release/
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.map
+*.list
+*.bin
+*.hex
+*.launch
+firmware/.settings/language.settings.xml
+firmware/.settings/stm32cubeide.project.prefs
+.metadata/
+RemoteSystemsTempFiles/
+
+# PlatformIO
+.pio/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Backups
+*.bak
+*.bak_*
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

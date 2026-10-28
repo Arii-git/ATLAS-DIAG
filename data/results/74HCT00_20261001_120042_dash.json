@@ -1,0 +1,39 @@
+{
+  "ic": "74HCT00",
+  "timestamp": "2026-10-01T12:00:42",
+  "source": "dashboard",
+  "mode": "quick",
+  "verdict": "FAULT",
+  "detail": "Bad 2/3",
+  "signature": "000000000000",
+  "candidates": [],
+  "repeat_diffs": 0,
+  "seconds": 0.006,
+  "full": {
+    "total": 3,
+    "mismatches": 2
+  },
+  "per_vector": [
+    {
+      "vector": "11111111",
+      "expected": "0000",
+      "got": "0000",
+      "match": true,
+      "ones": 8
+    },
+    {
+      "vector": "01010101",
+      "expected": "1111",
+      "got": "0000",
+      "match": false,
+      "ones": 4
+    },
+    {
+      "vector": "10101010",
+      "expected": "1111",
+      "got": "0000",
+      "match": false,
+      "ones": 4
+    }
+  ]
+}

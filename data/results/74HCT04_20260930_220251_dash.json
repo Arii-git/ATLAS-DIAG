@@ -1,0 +1,464 @@
+{
+  "ic": "74HCT04",
+  "timestamp": "2026-09-30T22:02:51",
+  "source": "dashboard",
+  "mode": "session",
+  "verdict": "PASS",
+  "detail": "64/64 OK",
+  "signature": "111111000000",
+  "seconds": 0.587,
+  "full": {
+    "total": 64,
+    "mismatches": 0
+  },
+  "per_vector": [
+    {
+      "vector": "000000",
+      "expected": "111111",
+      "got": "111111",
+      "match": true,
+      "ones": 0
+    },
+    {
+      "vector": "000001",
+      "expected": "111110",
+      "got": "111110",
+      "match": true,
+      "ones": 1
+    },
+    {
+      "vector": "000010",
+      "expected": "111101",
+      "got": "111101",
+      "match": true,
+      "ones": 1
+    },
+    {
+      "vector": "000011",
+      "expected": "111100",
+      "got": "111100",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "000100",
+      "expected": "111011",
+      "got": "111011",
+      "match": true,
+      "ones": 1
+    },
+    {
+      "vector": "000101",
+      "expected": "111010",
+      "got": "111010",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "000110",
+      "expected": "111001",
+      "got": "111001",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "000111",
+      "expected": "111000",
+      "got": "111000",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "001000",
+      "expected": "110111",
+      "got": "110111",
+      "match": true,
+      "ones": 1
+    },
+    {
+      "vector": "001001",
+      "expected": "110110",
+      "got": "110110",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "001010",
+      "expected": "110101",
+      "got": "110101",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "001011",
+      "expected": "110100",
+      "got": "110100",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "001100",
+      "expected": "110011",
+      "got": "110011",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "001101",
+      "expected": "110010",
+      "got": "110010",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "001110",
+      "expected": "110001",
+      "got": "110001",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "001111",
+      "expected": "110000",
+      "got": "110000",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "010000",
+      "expected": "101111",
+      "got": "101111",
+      "match": true,
+      "ones": 1
+    },
+    {
+      "vector": "010001",
+      "expected": "101110",
+      "got": "101110",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "010010",
+      "expected": "101101",
+      "got": "101101",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "010011",
+      "expected": "101100",
+      "got": "101100",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "010100",
+      "expected": "101011",
+      "got": "101011",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "010101",
+      "expected": "101010",
+      "got": "101010",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "010110",
+      "expected": "101001",
+      "got": "101001",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "010111",
+      "expected": "101000",
+      "got": "101000",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "011000",
+      "expected": "100111",
+      "got": "100111",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "011001",
+      "expected": "100110",
+      "got": "100110",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "011010",
+      "expected": "100101",
+      "got": "100101",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "011011",
+      "expected": "100100",
+      "got": "100100",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "011100",
+      "expected": "100011",
+      "got": "100011",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "011101",
+      "expected": "100010",
+      "got": "100010",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "011110",
+      "expected": "100001",
+      "got": "100001",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "011111",
+      "expected": "100000",
+      "got": "100000",
+      "match": true,
+      "ones": 5
+    },
+    {
+      "vector": "100000",
+      "expected": "011111",
+      "got": "011111",
+      "match": true,
+      "ones": 1
+    },
+    {
+      "vector": "100001",
+      "expected": "011110",
+      "got": "011110",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "100010",
+      "expected": "011101",
+      "got": "011101",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "100011",
+      "expected": "011100",
+      "got": "011100",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "100100",
+      "expected": "011011",
+      "got": "011011",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "100101",
+      "expected": "011010",
+      "got": "011010",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "100110",
+      "expected": "011001",
+      "got": "011001",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "100111",
+      "expected": "011000",
+      "got": "011000",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "101000",
+      "expected": "010111",
+      "got": "010111",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "101001",
+      "expected": "010110",
+      "got": "010110",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "101010",
+      "expected": "010101",
+      "got": "010101",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "101011",
+      "expected": "010100",
+      "got": "010100",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "101100",
+      "expected": "010011",
+      "got": "010011",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "101101",
+      "expected": "010010",
+      "got": "010010",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "101110",
+      "expected": "010001",
+      "got": "010001",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "101111",
+      "expected": "010000",
+      "got": "010000",
+      "match": true,
+      "ones": 5
+    },
+    {
+      "vector": "110000",
+      "expected": "001111",
+      "got": "001111",
+      "match": true,
+      "ones": 2
+    },
+    {
+      "vector": "110001",
+      "expected": "001110",
+      "got": "001110",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "110010",
+      "expected": "001101",
+      "got": "001101",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "110011",
+      "expected": "001100",
+      "got": "001100",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "110100",
+      "expected": "001011",
+      "got": "001011",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "110101",
+      "expected": "001010",
+      "got": "001010",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "110110",
+      "expected": "001001",
+      "got": "001001",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "110111",
+      "expected": "001000",
+      "got": "001000",
+      "match": true,
+      "ones": 5
+    },
+    {
+      "vector": "111000",
+      "expected": "000111",
+      "got": "000111",
+      "match": true,
+      "ones": 3
+    },
+    {
+      "vector": "111001",
+      "expected": "000110",
+      "got": "000110",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "111010",
+      "expected": "000101",
+      "got": "000101",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "111011",
+      "expected": "000100",
+      "got": "000100",
+      "match": true,
+      "ones": 5
+    },
+    {
+      "vector": "111100",
+      "expected": "000011",
+      "got": "000011",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "111101",
+      "expected": "000010",
+      "got": "000010",
+      "match": true,
+      "ones": 5
+    },
+    {
+      "vector": "111110",
+      "expected": "000001",
+      "got": "000001",
+      "match": true,
+      "ones": 5
+    },
+    {
+      "vector": "111111",
+      "expected": "000000",
+      "got": "000000",
+      "match": true,
+      "ones": 6
+    }
+  ]
+}

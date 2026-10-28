@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite it as below."
+type: software
+title: "ATLAS-DIAG: A Low-Cost Digital-Twin-Driven Tester for Pin-Level Stuck-at Fault Diagnosis of 74HCT Logic Chips"
+abstract: >-
+  ATLAS-DIAG is a low-cost tester for 74HCT00, 02, 04, 08, 32 and 86 logic
+  chips built on an STM32 NUCLEO-F446RE. A Python digital twin simulates all
+  24 single stuck-at pin faults per chip, compacts the test set with a greedy
+  pair-separating search (256 to 3 vectors for the quad gates, 64 to 2 for the
+  hex inverter) and exports the tables to the firmware. The board names the
+  stuck pin or its equivalence class and confirms every pass with a full
+  exhaustive check, standalone with an OLED or from a PC.
+authors:
+  - given-names: Arihant
+    family-names: Chordia
+    affiliation: "Department of Electronics and Communication Engineering, SRM Institute of Science and Technology, Kattankulathur"
+  - given-names: Manasa
+    family-names: "B J"
+    affiliation: "Department of Electronics and Communication Engineering, SRM Institute of Science and Technology, Kattankulathur"
+  - given-names: "Alan Sham"
+    family-names: "C P"
+    affiliation: "Department of Electronics and Communication Engineering, SRM Institute of Science and Technology, Kattankulathur"
+repository-code: "https://github.com/Arii-git/ATLAS-DIAG"
+url: "https://github.com/Arii-git/ATLAS-DIAG"
+license: MIT
+version: 1.0.0
+date-released: "2026-10-29"
+keywords:
+  - digital twin
+  - IC testing
+  - stuck-at fault
+  - fault diagnosis
+  - test compaction
+  - 74HCT
+  - STM32
+  - NUCLEO-F446RE

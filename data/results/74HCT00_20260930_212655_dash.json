@@ -1,0 +1,41 @@
+{
+  "ic": "74HCT00",
+  "timestamp": "2026-09-30T21:26:55",
+  "source": "dashboard",
+  "mode": "quick",
+  "verdict": "PASS",
+  "detail": "quick test OK",
+  "signature": "000011111111",
+  "candidates": [
+    "Good"
+  ],
+  "repeat_diffs": 0,
+  "seconds": 0.016,
+  "full": {
+    "total": 3,
+    "mismatches": 0
+  },
+  "per_vector": [
+    {
+      "vector": "11111111",
+      "expected": "0000",
+      "got": "0000",
+      "match": true,
+      "ones": 8
+    },
+    {
+      "vector": "01010101",
+      "expected": "1111",
+      "got": "1111",
+      "match": true,
+      "ones": 4
+    },
+    {
+      "vector": "10101010",
+      "expected": "1111",
+      "got": "1111",
+      "match": true,
+      "ones": 4
+    }
+  ]
+}
