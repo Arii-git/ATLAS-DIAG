@@ -10,7 +10,7 @@ ATLAS-DIAG needs one NUCLEO-F446RE board, two breadboards, a 0.96-inch SSD1306 O
 
 Every chip pin except 7 and 14 goes to an STM32 GPIO through its own 1 kΩ series resistor, twelve lines in all. The firmware switches each line between output (to drive a chip input) and input (to read a chip output) for each chip type, so the wiring stays the same when you swap chips. If a GPIO ever drives against a chip output, for example when the wrong chip is inserted or the Identify feature tries another pin-out, the resistor limits the current to about 5 mA.
 
-Pin 7 goes to GND and pin 14 to the NUCLEO's 5 V pin (CN7-18) by short direct wires with no resistor. A long or loose ground wire shows up as failures that get worse as more inputs are driven high.
+Pin 7 goes to the GND rail and pin 14 to the 5 V rail by short direct wires with no resistor. The rails take their power from the NUCLEO's 5V and GND pins. A long or loose ground wire shows up as failures that get worse as more inputs are driven high. If you have a 100 nF capacitor, fit it between DIP 14 and DIP 7, across the supply. Never put it in series with pin 14, because that leaves the chip without a proper supply.
 
 There is no level shifter. The STM32 drives 3.3 V, above the 2.0 V input-high threshold of 74HCT logic, and the chip's 5 V outputs go into pins that are 5 V tolerant. The firmware keeps idle and unused lines as digital inputs, never analog, because the 5 V tolerance does not apply in analog mode.
 
@@ -18,7 +18,7 @@ This only works for HCT parts. Plain 74HC chips powered at 5 V need roughly 3.5 
 
 ## Chip wiring (pin by pin)
 
-This table follows `pin_map[]` in `firmware/Core/Src/atlas_app.c`. "in" means a chip input (the board drives it), "out" means a chip output (the board reads it). Header positions are for the NUCLEO-F446RE Morpho connectors (ST UM1724); check them against your board before wiring.
+This table matches the bench wiring and `pin_map[]` in `firmware/Core/Src/atlas_app.c`. "in" means a chip input (the board drives it), "out" means a chip output (the board reads it). The header column gives the NUCLEO-F446RE Morpho connector pin used on the bench.
 
 | DIP pin | STM32 pin | Header | 74HCT00 / 08 / 32 / 86 | 74HCT02 | 74HCT04 |
 |---|---|---|---|---|---|
@@ -27,15 +27,15 @@ This table follows `pin_map[]` in `firmware/Core/Src/atlas_app.c`. "in" means a 
 | 3 | PC4 | CN10-34 | out (G1) | in (G1) | in (G2) |
 | 4 | PC5 | CN10-6 | in (G2) | out (G2) | out (G2) |
 | 5 | PC6 | CN10-4 | in (G2) | in (G2) | in (G3) |
-| 6 | PC7 | CN10-19 (D9) | out (G2) | in (G2) | out (G3) |
-| 7 | none | GND | GND | GND | GND |
+| 6 | PC7 | CN10-19 | out (G2) | in (G2) | out (G3) |
+| 7 | none | GND rail | GND | GND | GND |
 | 8 | PC9 | CN10-1 | out (G3) | in (G3) | out (G4) |
 | 9 | PC10 | CN7-1 | in (G3) | in (G3) | in (G4) |
 | 10 | PC11 | CN7-2 | in (G3) | out (G3) | out (G5) |
 | 11 | PC12 | CN7-3 | out (G4) | in (G4) | in (G5) |
 | 12 | PD2 | CN7-4 | in (G4) | in (G4) | out (G6) |
 | 13 | PB1 | CN10-24 | in (G4) | out (G4) | in (G6) |
-| 14 | none | 5V (CN7-18) | +5 V | +5 V | +5 V |
+| 14 | none | 5 V rail | +5 V | +5 V | +5 V |
 
 `pin_map[]` also lists PC8 and PB2 at the positions of DIP 7 and DIP 14. They are not wired; every chip profile marks those two positions as unused (`X`), so the firmware never drives them.
 
@@ -47,16 +47,16 @@ Per-chip pin configurations as sent in the `CFG:` command (DIP pin 1 first, `I` 
 | 74HCT02 | `OIIOIIXIIOIIOX` |
 | 74HCT04 | `IOIOIOXOIOIOIX` |
 
-Insert the chip with its notch towards the same side every time, so that pin 1 always lands on the PC2 line.
+The chip sits across the centre gap of its breadboard with the notch facing left, so pin 1 is at the bottom left and lands on the PC2 line. Use the same orientation every time.
 
 ## Other connections
 
 | Part | Connection | Notes |
 |---|---|---|
-| SSD1306 OLED, 128 x 64, I2C address 0x3C | SCL to PB8 (D15, CN10-3), SDA to PB9 (D14, CN10-5), VCC and GND to the supply rails | I2C1 at 100 kHz. PB8 and PB9 are 5 V tolerant, so a module with pull-ups to 5 V is fine. |
-| PASS LED (green) | PB12 (CN10-16), 330 Ω, LED, GND | lit after a pass |
-| FAULT LED (red) | PA8 (D7, CN10-23), 330 Ω, LED, GND | lit after a fault or an unknown result |
-| Test button | PA10 (D2, CN10-33) to a push button to GND | internal pull-up, no resistor needed |
+| SSD1306 OLED, 128 x 64, I2C address 0x3C | SCL to PB8 (CN10-3, D15), SDA to PB9 (CN10-5, D14), VCC to the 5 V rail, GND to the GND rail | I2C1 at 100 kHz. PB8 and PB9 are 5 V tolerant, so a module with pull-ups to 5 V is fine. |
+| PASS LED (green) | PB12 (CN10-16) to 330 Ω to the LED's long leg; short leg to GND | lit after a pass |
+| FAULT LED (red) | PA8 to 330 Ω to the LED's long leg; short leg to GND | lit after a fault or an unknown result |
+| Test button | PA10 to a push button to GND | internal pull-up, no resistor needed |
 | B1 user button | PC13, on the NUCLEO | works the same as the external button |
 | LD2 user LED | PA5, on the NUCLEO | on while the board applies a vector, blinks during the full check |
 | Power LED | on the breadboard supply rail | shows that the breadboard has power |
@@ -97,7 +97,7 @@ For comparison, commercial bench IC testers cost from about 9,000 INR (Kitek DIC
 
 ## Build and bring-up order
 
-1. Place the two breadboards and wire the supply rails. Connect DIP 7 to GND and DIP 14 to 5 V. With a multimeter, check that the 5 V and GND rails are not shorted.
+1. Place the two breadboards and wire the supply rails. Connect DIP 7 to the GND rail and DIP 14 to the 5 V rail. With a multimeter, check that the 5 V and GND rails are not shorted.
 2. Wire the twelve signal lines through the 1 kΩ resistors as in the table above. Do not insert a chip yet.
 3. Wire the OLED, the two LEDs with their 330 Ω resistors, and the button.
 4. Flash the firmware ([FIRMWARE.md](FIRMWARE.md)). With no chip inserted, the OLED should show `READY`.

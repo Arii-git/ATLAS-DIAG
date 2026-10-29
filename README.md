@@ -122,10 +122,10 @@ In standalone mode the firmware always runs both stages. On the PC the stages ar
 | Connection | NUCLEO-F446RE pin |
 |---|---|
 | Chip pins 1-6 and 8-13 (12 signal lines, each through 1 kΩ) | PC2, PC3, PC4, PC5, PC6, PC7, PC9, PC10, PC11, PC12, PD2, PB1 |
-| Chip pin 7 (GND) and pin 14 (+5 V) | GND and 5V, by short direct wires |
-| SSD1306 OLED SCL / SDA | PB8 (D15) / PB9 (D14) |
-| PASS LED (green) / FAULT LED (red), 330 Ω each | PB12 / PA8 (D7) |
-| Test button to GND (internal pull-up) | PA10 (D2); the on-board B1 button works too |
+| Chip pin 7 (GND) and pin 14 (+5 V) | GND rail and 5 V rail, by short direct wires |
+| SSD1306 OLED SCL / SDA (VCC to the 5 V rail, GND to the GND rail) | PB8 (CN10-3, D15) / PB9 (CN10-5, D14) |
+| PASS LED (green) / FAULT LED (red), 330 Ω each | PB12 (CN10-16) / PA8 |
+| Test button to GND (internal pull-up) | PA10; the on-board B1 button (PC13) works too |
 
 No level shifter is needed: a 3.3 V output is above the 2.0 V input-high threshold of HCT logic, and the GPIO pins used are 5 V tolerant.
 
